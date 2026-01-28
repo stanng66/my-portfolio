@@ -6,6 +6,24 @@ header {
     text-align: center;
 }
 
+/* Navigation */
+nav {
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 /* Body */
 body {
     font-family: Arial, sans-serif;

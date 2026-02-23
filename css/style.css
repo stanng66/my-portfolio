@@ -4,6 +4,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header */
 header {
     background-color:  #ECE3DE;
@@ -30,6 +34,9 @@ header h2 {
 /* Navigation */
 nav {
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav a {
@@ -75,6 +82,11 @@ section h2, section h3 {
 
 section p {
     margin-bottom: 15px;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
 }
 
 /* Footer */

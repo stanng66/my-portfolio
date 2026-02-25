@@ -1,3 +1,4 @@
+/* connects website to various google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -57,7 +58,7 @@ nav a:hover {
 
 /* Body */
 body { /* Chapter 2 - Step 2.2: Add General Styles */
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; /* set font for entire website */
     margin: 0;
     padding: 0;
     background-color: #B0D3E6;
@@ -125,12 +126,12 @@ footer P:last-child {
     }
 
     nav a {
-        display: block; /* It adjusts the padding and margin for smaller screens and changes the navigation from horizontal to vertical (display: block) for easier access on mobile. */
+        display: block; /* Chapter 2 step 3.1: It adjusts the padding and margin for smaller screens and changes the navigation from horizontal to vertical (display: block) for easier access on mobile. */
         width: 80%;
         margin: 5px auto;
     }
 
-    section { /*The layout and spacing inside each section are also reduced for mobile. */
+    section { /* Chapter 2 step 3.1: The layout and spacing inside each section are also reduced for mobile. */
         margin: 15px;
         padding: 20px;
     }

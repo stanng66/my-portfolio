@@ -94,8 +94,18 @@ footer {
     background-color: #ECE3DE;
     color: #DE83CB;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     border-top: 1px solid #ddd;
     box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
 }
 
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+FOOTER P:last-child {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

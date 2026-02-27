@@ -9,8 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header */
-header { /* Chapter 2 - Step 2.2: Add General Styles */
+/* Header */ /* Chapter 2 - Step 2.2: Add General Styles */
+header { 
     background-color:  #ECE3DE;
     width: 90%;
     max-width: 1000px;
@@ -56,8 +56,8 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* Body */
-body { /* Chapter 2 - Step 2.2: Add General Styles */
+/* Body */ /* Chapter 2 - Step 2.2: Add General Styles */
+body { 
     font-family: 'Roboto', Arial, sans-serif; /* set font for entire website */
     margin: 0;
     padding: 0;
@@ -90,8 +90,8 @@ section:hover {
     transition: 0.2s ease;
 }
 
-/* Footer */
-footer { /* Chapter 2 - Step 2.2: Add General Styles */ /* Chapter 2 - Step 2.5: Style the Footer */
+/* Footer */ /* Chapter 2 - Step 2.2: Add General Styles */
+footer { /* Chapter 2 - Step 2.5: Style the Footer */
     background-color: #ECE3DE;
     color: #DE83CB;
     text-align: center;
@@ -106,13 +106,12 @@ footer { /* Chapter 2 - Step 2.2: Add General Styles */ /* Chapter 2 - Step 2.5:
     text-align: center;
 }
 
-footer P:last-child {
+footer p:last-child {
     font-size: 0.9rem;
     opacity: 0.8;
 }
 
-/* Chapter 2 - Step 3: Making the Portfolio Responsive */
-/* Add Media Queries for Mobile Devices */
+/* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
 @media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
 
     header {

@@ -111,6 +111,11 @@ footer p:last-child {
     opacity: 0.8;
 }
 
+/* Chapter 3 - Step 2.1: Design the Gallery Structure */ /* Details only appear when button is clicked */
+.project-details {
+    display: none;
+}
+
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
 @media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
 

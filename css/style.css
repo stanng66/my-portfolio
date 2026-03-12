@@ -111,8 +111,8 @@ footer p:last-child {
     opacity: 0.8;
 }
 
-/* Chapter 3 - Step 2.1: Design the Gallery Structure */ /* Details only appear when button is clicked */
-.project-details {
+/* Chapter 2 - Step 2.1: Design the Gallery Structure */ 
+.project-details { /* Details only appear when button is clicked */
     display: none;
 }
 
@@ -122,6 +122,24 @@ footer p:last-child {
     height: auto;
     margin-bottom: 10px;
     border-radius: 8px;
+}
+
+/* Chapter 3, Step 3.1: Plan the Form Structure */ /* Style the contact form */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
 }
 
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */

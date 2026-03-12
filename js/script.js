@@ -25,9 +25,6 @@ buttons.forEach(button => { // Event handling button function
 // ====================
 // Step 3: Adding Form Validation to Your Contact Section
 // ====================
-// Task 3.1: Plan the Form Structure
-
-
 // Task 3.2: JavaScript for Validation
 
 

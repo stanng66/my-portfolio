@@ -72,6 +72,19 @@ form.addEventListener("submit", function(event) {
 }); 
 
 // ====================
+// Option 2: External Library
+// ====================
+// Typed.js - This library allows you to create a typing animation effect, which could be used in an introductory section on your portfolio.
+const typed = new Typed("#typed-text", {
+    strings: ["Web Development Student", "Learning HTML, CSS, and JavaScript", "Building My Portfolio"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+});
+
+
+// ====================
 // Extra carricular
 // ====================
 // Back to Top Button Functionality

@@ -168,6 +168,11 @@ input, textarea {
     cursor: pointer;
 }
 
+#typed-text { /* Step 4: Optional Bonus - External Library Typed.js */
+    color: #DE83CB;
+    font-weight: bold;
+}
+
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
 @media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
 

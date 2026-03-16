@@ -72,12 +72,6 @@ form.addEventListener("submit", function(event) {
 }); 
 
 // ====================
-// Step 4: Optional Bonus – Adding an API or External Library
-// ====================
-
-
-
-// ====================
 // Extra carricular
 // ====================
 // Back to Top Button Functionality

@@ -63,3 +63,26 @@ form.addEventListener("submit", function(event) {
 // ====================
 // Step 4: Optional Bonus – Adding an API or External Library
 // ====================
+
+
+
+// ====================
+// Back to Top Button Functionality
+// ====================
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+}
+
+topBtn.addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    behavior: "smooth"; 
+});

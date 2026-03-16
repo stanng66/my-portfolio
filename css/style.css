@@ -79,6 +79,7 @@ section {
 section h2, section h3 {
     color: #D7B4DC;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 section p {
@@ -140,6 +141,21 @@ input, textarea {
 .error-message {
     color: red;
     font-size: 0.8rem;
+}
+
+/* Back to Top Button */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 12px;
+    border: none;
+    background-color: #DE83CB;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */

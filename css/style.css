@@ -143,6 +143,16 @@ input, textarea {
     font-size: 0.8rem;
 }
 
+#form-notification {
+    display: none;
+    background-color: #D7F7D4;
+    color: #2E7D32;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 /* Back to Top Button */
 #topBtn {
     display: none;

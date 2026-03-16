@@ -25,6 +25,7 @@ buttons.forEach(button => { // Event handling button function
 // ====================
 // Task 3.2: JavaScript for Validation
 const form = document.getElementById("contact-form");
+const notification = document.getElementById("form-notification");
 
 form.addEventListener("submit", function(event) {
     const name = document.getElementById("name").value.trim();
@@ -58,7 +59,17 @@ form.addEventListener("submit", function(event) {
     if (!isValid) { // stop form submission if invalid
         event.preventDefault();
     }
-});
+
+    else { // Extra carricular
+        event.preventDefault(); // prevent page reload so user can see notification
+        notification.style.display = "block";
+        form.reset(); // Clear form fields after successful submission
+
+        setTimeout(function() {
+           notification.style.display = "none";
+        }, 4000);
+    } 
+}); 
 
 // ====================
 // Step 4: Optional Bonus – Adding an API or External Library
@@ -67,8 +78,9 @@ form.addEventListener("submit", function(event) {
 
 
 // ====================
-// Back to Top Button Functionality
+// Extra carricular
 // ====================
+// Back to Top Button Functionality
 const topBtn = document.getElementById("topBtn");
 
 window.onscroll = function() {scrollFunction()};
@@ -86,3 +98,4 @@ topBtn.addEventListener("click", function() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     behavior: "smooth"; 
 });
+

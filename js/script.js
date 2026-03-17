@@ -63,7 +63,7 @@ form.addEventListener("submit", function(event) {
     else { // Extra carricular
         event.preventDefault(); // prevent page reload so user can see notification
         notification.style.display = "block";
-        form.reset(); // Clear form fields after successful submission
+        form.reset(); // clear form fields after successful submission
 
         setTimeout(function() {
            notification.style.display = "none";
@@ -72,7 +72,7 @@ form.addEventListener("submit", function(event) {
 }); 
 
 // ====================
-// Option 2: External Library
+// Step 4: Optional Bonus – External Library
 // ====================
 // Typed.js - This library allows you to create a typing animation effect, which could be used in an introductory section on your portfolio.
 const typed = new Typed("#typed-text", {
@@ -83,6 +83,29 @@ const typed = new Typed("#typed-text", {
     loop: true
 });
 
+// Chart.js - This library allows you to add charts to your site, which can be helpful for displaying skills or project statistics visually.
+const ctx = document.getElementById("skillsChart");
+
+new Chart(ctx, {
+    /* type: "bar", */ // "bar" chart to show skill levels in a bar format
+    type: "radar", // "radar" chart to show skill levels in a web like format
+    data: {
+        labels: ["JavaScript", "GitHub", "CSS", "HTML"],
+        datasets: [{
+            label: "Skill Level (%)",
+            data: [60, 75, 80, 90],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            r: {
+                beginAtZero: true,
+                max: 100
+            }
+        }
+    }
+});
 
 // ====================
 // Extra carricular

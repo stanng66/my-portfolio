@@ -6,8 +6,9 @@
     <title> Stanley Nguyen | Web Design Portfolio</title>
     <link rel="stylesheet" href="css/style.css"> <!-- link css file to html -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- link Typed.js file to html (external library) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- link Chart.js file to html (external library) -->
     <script src="js/script.js" defer></script> <!-- link script.js file to html -->
-    <script src="js/chart.js" defer></script> <!-- link chart.js file to html (external library) -->
+ 
 </head>
 <body>
 
@@ -29,6 +30,11 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Hello, my name is Stanley Nguyen. I am a student learning web development and how to build my portfolio.</p>
+
+        <div class="chart-container"> <!-- Chapter 3, Step 4: Optional Bonus - External Library Chart.js -->
+           <h3>My Skills</h3>
+           <canvas id="skillsChart"></canvas>
+        </div>
     </section>
 
     <!-- Project Section -->

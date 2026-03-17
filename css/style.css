@@ -173,6 +173,11 @@ input, textarea {
     font-weight: bold;
 }
 
+.chart-container { /* Step 4: Optional Bonus - External Library Chart.js */
+    width: 400px;
+    margin: auto;
+}
+
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
 @media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
 

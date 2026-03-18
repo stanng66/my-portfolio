@@ -87,19 +87,21 @@ const typed = new Typed("#typed-text", {
 const ctx = document.getElementById("skillsChart");
 
 new Chart(ctx, {
-    /* type: "bar", */ // "bar" chart to show skill levels in a bar format
-    type: "radar", // "radar" chart to show skill levels in a web like format
+    type: "bar", // "bar" chart to show skill levels in a bar format
+    // type: "radar", // "radar" chart to show skill levels in a web like format
     data: {
         labels: ["JavaScript", "GitHub", "CSS", "HTML"],
         datasets: [{
             label: "Skill Level (%)",
             data: [60, 75, 80, 90],
-            borderWidth: 1
+            borderWidth: 1, 
+            backgroundColor: "#DE83CB",
+            borderRadius: 5
         }]
     },
     options: {
         scales: {
-            r: {
+            y: { // y when using type: "bar", use r when using type: "radar"
                 beginAtZero: true,
                 max: 100
             }

@@ -136,8 +136,8 @@ footer p:last-child {
 
 .projects-container {
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .project {
@@ -146,6 +146,7 @@ footer p:last-child {
     border-radius: 0;
     box-shadow: none;
     border-bottom: 1px solid #ddd;
+    width: 100%;
 }
 
 /* Chapter 3, Step 3.1: Plan the Form Structure */ /* Style the contact form */

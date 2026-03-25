@@ -17,79 +17,74 @@
          <h1>my-portfolio</h1>
          <h2>Stanley Nguyen</h2>
 
-         <p>I am a <span id="typed-text"></span></p>
+         <p>I am a <span id="typed-text"></span></p> <!-- Typed.js -->
 
          <nav> <!-- Header Navigation -->
              <a href="index.html">Home</a> <!-- Contains introductions to the portfolio and the about section-->
              <a href="projects.html">Projects</a> <!-- Contains all web development and coding related projects I have previously done -->
-             <a href="#contact">Contact</a> <!-- A page if you need to fina a way to reach out to me -->
+             <a href="contact.html">Contact</a> <!-- A page if you need to fina a way to reach out to me -->
          </nav>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <div class="section-content">
-        <h2>About Me</h2>
-        <p>Hello, my name is Stanley Nguyen. I am a student learning web development and how to build my portfolio.</p>
-        </div>
+           <h2>About Me</h2>
+           <p>Hello, my name is Stanley Nguyen. I am a student learning web development and trying to figure out how to build a portfolio.</p>
+        
 
-        <div class="chart-container"> <!-- Chapter 3, Step 4: Optional Bonus - External Library Chart.js -->
-           <h3>My Skills</h3>
-           <canvas id="skillsChart"></canvas>
+           <div class="chart-container"> <!-- Chapter 3, Step 4: Optional Bonus - External Library Chart.js -->
+              <h3>My Skills</h3>
+              <canvas id="skillsChart"></canvas>
+           </div>
         </div>
     </section>
 
     <!-- Project Section preview -->
      <section id="projects">
         <h2>Projects Preview</h2>
-        
+        <a href="projects.html" class="projectsBtn">View More Projects</a>
         <div class="projects-container">
-        <div class="project"> <!-- Chapter 2, Step 2.1: Design the Gallery Structure -->
-            <h3> Building a Basic Webpage </h3> <!-- project 1 --> 
+           <div class="project"> <!-- Chapter 2, Step 2.1: Design the Gallery Structure -->
+               <h3> Building a Basic Webpage </h3> <!-- project 1 --> 
 
-            <p>Created a basic webpage using only HTML. </p>
+               <p>Created a basic webpage using only HTML. </p>
 
-            <button class="toggle-btn">Show Details</button> 
+               <button class="toggle-btn">Show Details</button> 
 
-            <div class="project-details"> <!-- screenshot of project -->
-                <img src="images/project1.png" alt="Project Screenshot"> <!-- screenshot of project -->
+               <div class="project-details"> <!-- screenshot of project -->
+                   <img src="images/project1.png" alt="Project Screenshot"> <!-- screenshot of project -->
 
-                <p> [any extra information] </p>
+                   <p> [any extra information] </p>
 
-                <p><strong>Technologies:</strong> HTML</p>
+                   <p><strong>Technologies:</strong> HTML</p>
 
-                <a href="https://github.com/stanng66/interactive-quiz-webpage" target="_blank"> View Code </a> <!-- github link to source code -->
+                   <a href="https://github.com/stanng66/interactive-quiz-webpage" target="_blank"> View Code </a> <!-- github link to source code -->
+                   <br>
+                   <a href="https://stanng66.github.io/interactive-quiz-webpage/" target="_blank"> Live Demo </a> <!-- link to the live page -->
+               </div>
+           </div>
 
-                <br>
+           <div class="project"> <!-- Chapter 2, Step 2.1: Design the Gallery Structure -->
+               <h3> Interactive Quiz Webpage </h3> <!-- project 2 --> 
 
-                <a href="https://stanng66.github.io/interactive-quiz-webpage/" target="_blank"> Live Demo </a> <!-- link to the live page -->
-            </div>
+               <p> An Interactive Quiz Webpage using HTML and CSS </p>
+
+               <button class="toggle-btn">Show Details</button>
+
+               <div class="project-details">
+                   <img src="images/project2.png" alt="Project Screenshot"> <!-- screenshot of project -->
+
+                   <p> [any extra information]</p>
+
+                   <p><strong>Technologies:</strong> HTML</p>
+
+                   <a href="https://github.com/stanng66/html--basic-webpage" target="_blank"> View Code </a> <!-- github link to source code -->
+                   <br>
+                   <a href="https://stanng66.github.io/html--basic-webpage/" target="_blank"> Live Demo </a> <!-- link to the live page -->
+               </div>
+           </div>
         </div>
-
-        <div class="project"> <!-- Chapter 2, Step 2.1: Design the Gallery Structure -->
-            <h3> Interactive Quiz Webpage </h3> <!-- project 2 --> 
-
-            <p> An Interactive Quiz Webpage using HTML and CSS </p>
-
-            <button class="toggle-btn">Show Details</button>
-
-            <div class="project-details">
-                <img src="images/project2.png" alt="Project Screenshot"> <!-- screenshot of project -->
-
-                <p> [any extra information]</p>
-
-                <p><strong>Technologies:</strong> HTML</p>
-
-                <a href="https://github.com/stanng66/html--basic-webpage" target="_blank"> View Code </a> <!-- github link to source code -->
-
-                <br>
-
-                <a href="https://stanng66.github.io/html--basic-webpage/" target="_blank"> Live Demo </a> <!-- link to the live page -->
-            </div>
-        </div>
-        </div>
-
-        <a href="projects.html" class="btn">View All Projects</a>
     </section>
 
     <!-- Footer -->

@@ -12,17 +12,22 @@ html {
 /* Header */ /* Chapter 2 - Step 2.2: Add General Styles */
 header { 
     background-color:  #ECE3DE;
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 30px 20px;
+    width: 100%;
+    margin: 0;
+    padding: 15px 30px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin: 0;
     font-size: 2.5rem;
     color: #DE83CB;
 }
@@ -34,15 +39,15 @@ header h2 {
 
 /* Navigation */ /* Chapter 2 - Step 2.3: Style the Navigation Bar */
 nav { 
-    margin: 15px;
+    margin: 0px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 nav a {
     margin: 0 10px;
-    padding: 8px 15px;
+    padding: 6px 10px;
     text-decoration: none;
     color:  #B0D3E6;
     background-color: #FAFAFA;
@@ -68,12 +73,16 @@ body {
 
 /* Sections */ /* Chapter 2 - Step 2.4: Style the Sections */
 section {
-    background-color: rgba(236, 227, 222, 0.75);
-    margin: 20px auto;
-    padding: 25px;
+    background: none;
+    margin: 0;
+    padding: 60px 20px;
+    border-radius: 0px;
+    box-shadow: 0;
+}
+
+.section-content {
     max-width: 1000px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 0;
 }
 
 section h2, section h3 {
@@ -127,15 +136,16 @@ footer p:last-child {
 
 .projects-container {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
 }
 
 .project {
-    background-color: #ECE3DE;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: none;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
 }
 
 /* Chapter 3, Step 3.1: Plan the Form Structure */ /* Style the contact form */
@@ -224,8 +234,8 @@ button:active {
 @media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
 
     header {
-        width: 95%;
-        padding: 20px 10px;
+        width: 100%;
+        padding: 15px;
     }
 
     nav {

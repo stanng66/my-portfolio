@@ -27,49 +27,53 @@ buttons.forEach(button => { // Event handling button function
 const form = document.getElementById("contact-form");
 const notification = document.getElementById("form-notification");
 
-form.addEventListener("submit", function(event) {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const nameError = document.getElementById("name-error");
-    const emailError = document.getElementById("email-error");
-    const messageError = document.getElementById("message-error");
+if (form) {
+    form.addEventListener("submit", function(event) {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-    nameError.textContent = "";
-    emailError.textContent = "";
-    messageError.textContent = "";
+        const nameError = document.getElementById("name-error");
+        const emailError = document.getElementById("email-error");
+        const messageError = document.getElementById("message-error");
 
-    let isValid = true;
+        nameError.textContent = "";
+        emailError.textContent = "";
+        messageError.textContent = "";
 
-    if (name === "") {
-        nameError.textContent = "Please enter your name.";
-        isValid = false;
-    }
+        let isValid = true;
 
-    if (email === "" || !email.includes("@")) {
-        emailError.textContent = "Please enter a valid email address.";
-        isValid = false;
-    }
+        if (name === "") {
+            nameError.textContent = "Please enter your name.";
+            isValid = false;
+        }
 
-    if (message === "") {
-        messageError.textContent = "Please enter a message.";
-        isValid = false;
-    }
+        if (email === "" || !email.includes("@")) {
+            emailError.textContent = "Please enter a valid email address.";
+            isValid = false;
+        }
 
-    if (!isValid) { // stop form submission if invalid
-        event.preventDefault();
-    }
+        if (message === "") {
+            messageError.textContent = "Please enter a message.";
+            isValid = false;
+        }
 
-    else { // Extra carricular
-        event.preventDefault(); // prevent page reload so user can see notification
-        notification.style.display = "block";
-        form.reset(); // clear form fields after successful submission
+        if (!isValid) {
+            event.preventDefault(); 
+        } else {
+            event.preventDefault(); 
 
-        setTimeout(function() {
-           notification.style.display = "none";
-        }, 4000);
-    } 
-}); 
+            notification.style.display = "block";
+
+            // Reset form
+            form.reset();
+
+            setTimeout(function() {
+                notification.style.display = "none";
+            }, 4000);
+        }
+    });
+}
 
 // ====================
 // Step 4: Optional Bonus – External Library

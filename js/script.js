@@ -32,7 +32,6 @@ if (form) {
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
-
         const nameError = document.getElementById("name-error");
         const emailError = document.getElementById("email-error");
         const messageError = document.getElementById("message-error");
@@ -44,17 +43,17 @@ if (form) {
         let isValid = true;
 
         if (name === "") {
-            nameError.textContent = "Please enter your name.";
+            nameError.textContent = "Please enter your name";
             isValid = false;
         }
 
         if (email === "" || !email.includes("@")) {
-            emailError.textContent = "Please enter a valid email address.";
+            emailError.textContent = "Please enter a valid email address";
             isValid = false;
         }
 
         if (message === "") {
-            messageError.textContent = "Please enter a message.";
+            messageError.textContent = "Please enter a message";
             isValid = false;
         }
 
@@ -63,14 +62,14 @@ if (form) {
         } else {
             event.preventDefault(); 
 
-            notification.style.display = "block";
-
-            // Reset form
-            form.reset();
+            if (notification) {
+                notification.style.display = "block";
 
             setTimeout(function() {
                 notification.style.display = "none";
             }, 4000);
+        }
+        form.reset();
         }
     });
 }
@@ -79,17 +78,22 @@ if (form) {
 // Step 4: Optional Bonus – External Library
 // ====================
 // Typed.js - This library allows you to create a typing animation effect, which could be used in an introductory section on your portfolio.
-const typed = new Typed("#typed-text", {
+const typedElement = document.getElementById("typed-text");
+
+if (typedElement && typeof Typed !== "undefined") {
+    new Typed("#typed-text", {
     strings: ["Web Development Student", "Learning HTML, CSS, and JavaScript", "Building My Portfolio"],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 1500,
     loop: true
 });
+}
 
 // Chart.js - This library allows you to add charts to your site, which can be helpful for displaying skills or project statistics visually.
 const ctx = document.getElementById("skillsChart");
 
+if (ctx && typeof Chart !== "undefined") {
 new Chart(ctx, {
     type: "bar", // "bar" chart to show skill levels in a bar format
     // type: "radar", // "radar" chart to show skill levels in a web like format
@@ -112,6 +116,7 @@ new Chart(ctx, {
         }
     }
 });
+}
 
 // ====================
 // Chapter 4 - Continuous Improvement
@@ -145,7 +150,7 @@ if (toggle) {
 // Back to Top Button Functionality
 const topBtn = document.getElementById("topBtn");
 
-window.onscroll = function() {scrollFunction()};
+/* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -158,5 +163,22 @@ function scrollFunction() {
 topBtn.addEventListener("click", function() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-});
+}); */
 
+if (topBtn) {
+
+    window.addEventListener("scroll", function () {
+        if (document.documentElement.scrollTop > 20) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    });
+
+    topBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

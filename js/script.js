@@ -114,6 +114,32 @@ new Chart(ctx, {
 });
 
 // ====================
+// Chapter 4 - Continuous Improvement
+// ====================
+// Step 2: Add ne features - dark mode toggle
+const toggle = document.getElementById("theme-toggle");
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+}
+
+if (toggle) {
+    toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+
+    toggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            toggle.textContent = "☀️"; // if in dark mode show the sun
+            localStorage.setItem("theme", "dark");
+        } else {
+            toggle.textContent = "🌙"; // if in light mode show the moon
+            localStorage.setItem("theme", "light");
+        }
+    });
+}
+
+// ====================
 // Extra carricular
 // ====================
 // Back to Top Button Functionality

@@ -82,7 +82,7 @@ const typedElement = document.getElementById("typed-text");
 
 if (typedElement && typeof Typed !== "undefined") {
     new Typed("#typed-text", {
-    strings: ["Web Development Student", "Learning HTML, CSS, and JavaScript", "Building My Portfolio"],
+    strings: ["A Web Development Student", "Learning HTML, CSS, and JavaScript", "Building My Portfolio"],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 1500,

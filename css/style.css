@@ -370,6 +370,35 @@ body.dark-mode .project {
     border-bottom: 1px solid #444;
 }
 
+/* About Section */
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    max-height: 300px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px;
+}
+
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
 @media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
 

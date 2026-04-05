@@ -10,11 +10,11 @@ buttons.forEach(button => { // Event handling button function
 
         const details = this.nextElementSibling; // toggle project details
 
-        if (details.style.display === "block") { // Show/Hide Details. Toggling visibility
-            details.style.display = "none";
-            this.textContent = "Show Details";
+       if (details.style.maxHeight) { // Show/Hide Details. Toggling visibility
+           details.style.maxHeight = null;  // improvements made for smoother transition when showing/hiding details
+           this.textContent = "Show Details";          
         } else {
-            details.style.display = "block";
+            details.style.maxHeight = details.scrollHeight + "px";
             this.textContent = "Hide Details";
         }
     });

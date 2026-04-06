@@ -217,7 +217,6 @@ footer p:last-child {
 
 /* Chapter 2 - Step 2.1: Design the Gallery Structure */ 
 .project-details { /* Details only appear when button is clicked */
-    /*display: none;*/
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -496,6 +495,22 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: var(--space-lg);
+}
+
+#secret-hitbox { /* Chapter 4, Step 3: Adding new features - Secret Hitbox */
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+}
+
+#secret-hitbox:hover { /* Chapter 4, Step 3: Adding new features - Secret Hitbox */
+    background-color: var(--clr-accent);
+    opacity: 0.15;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */

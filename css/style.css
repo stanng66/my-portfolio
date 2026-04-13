@@ -516,30 +516,85 @@ body.dark-mode input, body.dark-mode textarea {
 }
 
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
-@media (max-width: 600px) { /* This media query applies styles when the screen width is 600px or less, which is common for mobile devices. */
-
+@media (max-width: 600px) { /* Mobile devices. */
     header {
         width: 100%;
-        padding: 15px;
+        padding: var(--space-sm);
+        text-align: center;
     }
 
     nav {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        gap: var(--space-sm);
     }
 
     nav a {
         display: block; /* Chapter 2 step 3.1: It adjusts the padding and margin for smaller screens and changes the navigation from horizontal to vertical (display: block) for easier access on mobile. */
-        width: 80%;
-        margin: 5px auto;
+        width: 90%;
+        margin: var(--space-xs) auto;
+        padding: var(--space-sm);
+        font-size: var(--fs-sm);
     }
 
     section { /* Chapter 2 step 3.1: The layout and spacing inside each section are also reduced for mobile. */
-        margin: 15px;
-        padding: 20px;
+        margin: var(--space-sm);
+        padding: var(--space-sm);
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    p {
+        font-size: var(--fs-sm);
     }
 
     footer {
-        padding: 15px 0;
+        padding: var(--space-sm) 0;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--radius-md)
+    }
+
+    h1 {
+        font-size: var(--fs-lg);
+    }
+
+    h2 {
+        font-size: var(--fs-md);
+    }
+
+    h3 {
+        font-size: var(--fs-sm);
+    }
+}
+
+@media (max-width: 1024px) { /* Tablet devices*/
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-md);
+    }
+
+    nav a {
+        padding: var(--space-sm);
+        font-size: var(--fs-base);
+    }
+
+    section {
+        margin: var(--space-md);
+        padding: var(--space-md);
+    }
+
+    /* If you have project cards / grids */
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
     }
 }

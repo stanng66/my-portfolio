@@ -65,7 +65,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 /* Header */ /* Chapter 2 - Step 2.2: Add General Styles */
@@ -574,7 +574,7 @@ body.dark-mode input, body.dark-mode textarea {
     }
 }
 
-@media (max-width: 1024px) { /* Tablet devices*/
+@media (max-width: 1024px) { /* Tablet devices */
     nav {
         flex-wrap: wrap;
         justify-content: center;
@@ -591,7 +591,7 @@ body.dark-mode input, body.dark-mode textarea {
         padding: var(--space-md);
     }
 
-    /* If you have project cards / grids */
+    /* Project cards / grids */
     .projects {
         display: grid;
         grid-template-columns: 1fr 1fr;

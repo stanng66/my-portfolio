@@ -1,7 +1,7 @@
 :root {
     /* Colour Palette */
-    --clr-primary: #DE83CB; /* French Mauve */
-    --clr-secondary: #D7B4DC; /* Pink Lavender */
+    --clr-primary: #d81b60; /* Deep Pink */ /* original pick - French Mauve #DE83CB */
+    --clr-secondary: #9e063d; /* Pink Lavender - #D7B4DC */
     --clr-accent: #FA86B2; /* Light Pink */
     --clr-bg-light: #ECE3DE; /* Isabelline */
     --clr-bg-main: #B0D3E6; /* Columbia Blue */
@@ -68,7 +68,9 @@ html {
     scroll-behavior: smooth; 
 }
 
+/* ----------------------------------------------------- */
 /* Header */ /* Chapter 2 - Step 2.2: Add General Styles */
+/* ----------------------------------------------------- */
 header { 
     background-color:  var(--clr-bg-light);
     width: 100%;
@@ -107,7 +109,9 @@ header h2, section h2, section h3 {
     color: var(--clr-secondary);
 }
 
+/* --------------------------------------------------------------- */
 /* Navigation */ /* Chapter 2 - Step 2.3: Style the Navigation Bar */
+/* --------------------------------------------------------------- */
 nav { 
     margin: 0px;
     display: flex;
@@ -133,7 +137,9 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* --------------------------------------------------- */
 /* Body */ /* Chapter 2 - Step 2.2: Add General Styles */
+/* --------------------------------------------------- */
 body { 
     font-family: 'Roboto', Arial, sans-serif; /* set font for entire website */
     margin: 0;
@@ -153,7 +159,9 @@ main {
     width: 100%;
 }
 
+/* ------------------------------------------------------- */
 /* Sections */ /* Chapter 2 - Step 2.4: Style the Sections */
+/* ------------------------------------------------------- */
 section {
     background: none;
     margin: 0;
@@ -179,7 +187,7 @@ section h3 {
 }
 
 section h2, section h3 {
-    color: #D7B4DC;
+    color: var(--clr-primary);
     margin-bottom: 15px;
     text-align: center;
 }
@@ -194,13 +202,27 @@ section:hover {
     transition: var(--transition);
 }
 
+/* ------------- */
 /* About Section */
+/* ------------- */
 .about-container {
     display: flex;
     gap: var(--space-lg);
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.about-text {
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: var(--space-md);
 }
 
 .about-image {
@@ -223,7 +245,28 @@ ul {
     margin: var(--space-lg);
 }
 
+ul.about-list {
+    text-align: left;
+    max-width: 800px;
+    margin: var(--space-md) auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul.about-list li {
+    margin-bottom: 8px;
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    white-space: wrap;
+}
+
+ul.about-list li strong {
+    color: var(--clr-primary);
+}
+
+/* ----------------------------------------------------- */
 /* Footer */ /* Chapter 2 - Step 2.2: Add General Styles */
+/* ----------------------------------------------------- */
 footer { /* Chapter 2 - Step 2.5: Style the Footer */
     background-color: var(--clr-bg-light);
     color: var(--clr-primary);
@@ -244,6 +287,9 @@ footer p:last-child {
     opacity: 0.8;
 }
 
+/* -------- */
+/* Projects */
+/* -------- */
 /* Chapter 2 - Step 2.1: Design the Gallery Structure */ 
 .project-details { /* Details only appear when button is clicked */
     max-height: 0;
@@ -293,6 +339,9 @@ footer p:last-child {
     box-shadow: var(--shadow-md);
 }
 
+/* ------- */
+/* Contact */ 
+/* ------- */
 /* Chapter 3, Step 3.1: Plan the Form Structure */ /* Style the contact form */
 .contact-container {
     display: flex;
@@ -336,6 +385,9 @@ footer p:last-child {
     width: 100px;
 }
 
+/* ------------------ */
+/* Contact input form */ 
+/* ------------------ */
 input, textarea {
     padding: 14px;
     border-radius: var(--radius-sm);
@@ -366,18 +418,24 @@ textarea {
     text-align: center;
 }
 
-/* Chapter 3.4: Optional Bonus - External Library Typed.js */
+/* ------------------------------------------------------- */
+/* Chapter 3.4: Optional Bonus - External Library */
+/* ------------------------------------------------------- */
+/* Typed.js */
 #typed-text { 
     color: var(--clr-primary);
     font-weight: bold;
 }
 
-/* Chapter 3.4: Optional Bonus - External Library Chart.js */
+/* Chart.js */
 .chart-container { 
     max-width: 400px;
     margin: 30px auto;
 }
 
+/* ------ */
+/* Button */
+/* ------ */
 button { /* Styling all the buttons */
     padding: var(--space-sm) var(--space-md);
     background-color: var(--clr-primary);
@@ -515,6 +573,9 @@ body.dark-mode input, body.dark-mode textarea {
     cursor: pointer;
 }
 
+/* ----- */
+/* Media */
+/* ----- */
 /* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
 @media (max-width: 600px) { /* Mobile devices. */
     header {

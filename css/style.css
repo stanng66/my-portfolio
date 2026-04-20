@@ -554,6 +554,11 @@ body.dark-mode nav a {
     background-color: var(--clr-dark-surface);
     color: var(--clr-text-white);
 }
+body.dark-mode nav a:hover { 
+    background-color: var(--clr-accent);
+    color: var(--clr-text-white);
+    text-decoration: none;
+}
 
 body.dark-mode input, body.dark-mode textarea {
     background-color: var(--clr-dark-surface);

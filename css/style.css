@@ -1,4 +1,4 @@
-:root {
+:root { /* Created for consitency and for easier adjustments when needed */
     /* Colour Palette */
     --clr-primary: #d81b60; /* Deep Pink */ /* original pick - French Mauve #DE83CB */
     --clr-secondary: #9e063d; /* Pink Lavender - #D7B4DC */
@@ -68,9 +68,10 @@ html {
     scroll-behavior: smooth; 
 }
 
-/* ----------------------------------------------------- */
-/* Header */ /* Chapter 2 - Step 2.2: Add General Styles */
-/* ----------------------------------------------------- */
+/* ------ */
+/* Header */ 
+/* ------ */
+/* Chapter 2 - Step 2.2: Add General Styles */
 header { 
     background-color:  var(--clr-bg-light);
     width: 100%;
@@ -109,9 +110,10 @@ header h2, section h2, section h3 {
     color: var(--clr-secondary);
 }
 
-/* --------------------------------------------------------------- */
-/* Navigation */ /* Chapter 2 - Step 2.3: Style the Navigation Bar */
-/* --------------------------------------------------------------- */
+/* ---------- */
+/* Navigation */ 
+/* ---------- */
+/* Chapter 2 - Step 2.3: Style the Navigation Bar */
 nav { 
     margin: 0px;
     display: flex;
@@ -137,9 +139,10 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* --------------------------------------------------- */
-/* Body */ /* Chapter 2 - Step 2.2: Add General Styles */
-/* --------------------------------------------------- */
+/* ---- */
+/* Body */ 
+/* ---- */
+/* Chapter 2 - Step 2.2: Add General Styles */
 body { 
     font-family: 'Roboto', Arial, sans-serif; /* set font for entire website */
     margin: 0;
@@ -159,9 +162,10 @@ main {
     width: 100%;
 }
 
-/* ------------------------------------------------------- */
-/* Sections */ /* Chapter 2 - Step 2.4: Style the Sections */
-/* ------------------------------------------------------- */
+/* -------- */
+/* Sections */ 
+/* -------- */
+/* Chapter 2 - Step 2.4: Style the Sections */
 section {
     background: none;
     margin: 0;
@@ -264,9 +268,9 @@ ul.about-list li strong {
     color: var(--clr-primary);
 }
 
-/* ----------------------------------------------------- */
-/* Footer */ /* Chapter 2 - Step 2.2: Add General Styles */
-/* ----------------------------------------------------- */
+/* ------ */
+/* Footer */
+/* ------ */
 footer { /* Chapter 2 - Step 2.5: Style the Footer */
     background-color: var(--clr-bg-light);
     color: var(--clr-primary);
@@ -288,7 +292,7 @@ footer p:last-child {
 }
 
 /* -------- */
-/* Projects */
+/* Projects */ 
 /* -------- */
 /* Chapter 2 - Step 2.1: Design the Gallery Structure */ 
 .project-details { /* Details only appear when button is clicked */
@@ -418,9 +422,9 @@ textarea {
     text-align: center;
 }
 
-/* ------------------------------------------------------- */
+/* ---------------------------------------------- */
 /* Chapter 3.4: Optional Bonus - External Library */
-/* ------------------------------------------------------- */
+/* ---------------------------------------------- */
 /* Typed.js */
 #typed-text { 
     color: var(--clr-primary);
@@ -574,9 +578,9 @@ body.dark-mode input, body.dark-mode textarea {
 }
 
 /* ----- */
-/* Media */
+/* Media */ 
 /* ----- */
-/* Chapter 2 - Step 3: Making the Portfolio Responsive */ /* Add Media Queries for Mobile Devices */
+/* Chapter 2 - Step 3: Making the Portfolio Responsive */ 
 @media (max-width: 600px) { /* Mobile devices. */
     header {
         width: 100%;

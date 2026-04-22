@@ -86,7 +86,7 @@ header {
 }
 
 .header-container {
-    max-width: 1000;
+    max-width: 100%;
     margin: 0 auto;
     padding: 15px 30px;
     display: flex;
@@ -177,7 +177,7 @@ section {
 }
 
 .section-content {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -283,7 +283,7 @@ footer { /* Chapter 2 - Step 2.5: Style the Footer */
 }
 
 .footer-container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -394,9 +394,9 @@ footer p:last-child {
 .other-info-container {
     display: grid;
     gap: var(--space-md);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: var(--space-lg);
-    max-width: 1250px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }

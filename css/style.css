@@ -60,10 +60,12 @@
 /* connects website to various google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Smooth transitions */
 * {
     transition: var(--transition);
 }
 
+/* Smooth Scroll */
 html {
     scroll-behavior: smooth; 
 }
@@ -326,7 +328,7 @@ footer p:last-child {
     width: 100%;
 }
 
-.projectsBtn {
+.projectsPreviewBtn {
     padding: 10px 20px;
     background-color: var(--clr-accent);
     color: var(--clr-text-white);
@@ -387,6 +389,16 @@ footer p:last-child {
 #contact button {
     margin-top: 15px;
     width: 100px;
+}
+
+.other-info-container {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: var(--space-lg);
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ------------------ */
